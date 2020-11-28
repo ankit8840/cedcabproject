@@ -1,0 +1,57 @@
+#section div img{
+    position: absolute;
+    z-index:-1;
+}
+#form1{
+    background-color: white;
+    border-radius: 10px;
+}
+#logo{
+    width:20%;
+}
+#form1 span{
+    background-color: rgb(183, 214, 5);
+    color:#4a0161;
+    font-weight: bold;
+    border-radius: 10%;
+}
+#submit{
+    background-color: rgb(183, 214, 5);
+    color:#4a0161;
+    font-weight: bold;
+    border:none;
+}
+#mss{
+    color:red;
+}
+#navbar{
+    background-color: rgb(183, 214, 5);
+   
+}
+#navbar a{
+    color:#4a0161;
+}
+#form1 h5,h4{
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+#carttype{
+    text-decoration: none;
+}
+#pickup,#drop,#cartype{
+    -webkit-appearance: none;
+}
+footer{
+    font-size: 30px;
+    background-color: rgb(183, 214, 5);
+    color:#4a0161;
+}
+#copyright{
+    font-size: 20px;
+}
+#footer{
+    display: contents;
+}
+#book{
+    display:none;
+}

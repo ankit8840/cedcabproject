@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>
+      Admin Panel
+   </title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="nav1">
+        <ul>
+            <li><img src="olaimg.png"></li>
+            <div id="nav2">
+                <li>
+                    <!-- <div class="dropdown">
+                        <button class="dropbtn">Routes</button>
+                        <div class="dropdown-content">
+                            <a href="routeform.php">Add Routes</a>
+                            <a href="showroute.php">Update Routes</a>
+                        </div>
+                    </div> -->
+                </li>
+                <li>
+                    <!-- <div class="dropdown">
+                        <button class="dropbtn">Rides</button>
+                        <div class="dropdown-content">
+                            <a href="ride.php">Ride Request</a>
+                            <a href="#">view Rides</a>
+                        </div>
+                    </div> -->
+                </li>
+                <li>
+                    <!-- <div class="dropdown">
+                        <button class="dropbtn" onclick="bookingpage()">Bookings</button>
+                    </div> -->
+                </li>
+                <li>
+                    <!-- <div class="dropdown">
+                        <button class="dropbtn" onclick="user()">Users</button>
+                    </div> -->
+                <li>
+            <!-- <li><div class="dropdown">
+                        <button class="dropbtn">Earning</button>
+                </div> -->
+            </li>
+            <!-- <li><div class="dropdown">
+                    <button class="dropbtn">Logout</button>
+                </div> -->
+            </li>
+        </ul>
+    </div>
+    <script>
+        function user(){
+            window.location.href = "user.php";
+        }
+        function bookingpage(){
+            window.location.href = "bookingreq.php";
+        }
+    </script>
