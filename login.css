@@ -282,3 +282,20 @@ table tr td .image{
     font-size: 35px;
     color:rgb(196, 3, 3);
   }
+  #invoice{
+    background: rgba(190, 188, 188, 0.6);
+      padding: 7px;
+      display: inline-block;
+      margin-left: 25%;
+  }
+  #invoice h1{
+      color:white;
+  }
+  #invoice div{
+      padding: 10px;
+      border: 2px solid black;
+      color:rgb(196, 3, 3);
+  }
+  #margin{
+      margin-top: 300px;
+  }

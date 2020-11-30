@@ -64,5 +64,7 @@ if (isset($_POST["submit"])) {
                 <?php echo $message ?>
         </div> -->
     </div>
+    <div id="margin">
+    </div>
 </body>
 </html>

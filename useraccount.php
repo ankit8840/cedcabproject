@@ -1,6 +1,7 @@
 <?php
 require 'class.php';
 $id=$_SESSION['userdata']['userid'];
+$name=$_SESSION['userdata']['name'];
 $con = new showuser();
 $con->connect('localhost', 'root', '', 'newtasks');
 $loc=$con->useraccount($id);
@@ -16,7 +17,36 @@ if(isset($_POST['delete'])){
     header("Refresh:0; url=useraccount.php");
 }
 ?>
-<?php require 'adminnav.html'?>
+<!DOCTYPE html>
+<html>
+<head>
+   <title>
+      Admin Panel
+   </title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="nav1">
+        <ul>
+            <li><img src="olaimg.png"></li>
+            <div id="nav2">
+                <h1>Welcome <?php echo $name ?></h1>
+            </div>
+        </ul>
+<div id="aside">
+
+<div class="sidenav">
+  <a href="userdashboard.php">Home</a>
+  <a href="index.php">Book New Ride</a>
+  <a href="userpendingrides.php">Pending Rides</a>
+  <a href="usercomplete.php">Completed Rides</a>
+  <a href="usercanclerides.php">Canceled Rides</a>
+  <a href="userrides.php">All Rides</a>
+  <a href="useraccount.php">Account</a>
+  <a href="logout.php">Logout</a>
+</div> 
+</div>
 <div id="tiles">
     <h1 style="color:white">Account Info</h1>
     <table id="tiletab">
@@ -52,3 +82,7 @@ if(isset($_POST['delete'])){
     document.getElementById("username").readOnly = true; 
     </script>
     <html>
+
+
+
+

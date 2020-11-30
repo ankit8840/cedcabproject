@@ -85,5 +85,7 @@ if (isset($_POST["submit"])) {
             
         </div>
     </div>
+    <div id="margin">
+    </div>
 </body>
 </html>

@@ -71,7 +71,7 @@ $(function () {
                     window.location.href = "login.php";
                 }
                else{
-                   alert("your ride is book");
+                   window.location.href = "invoice.php";
                }
                 
             },

@@ -191,7 +191,8 @@
             $userid=$_SESSION['userdata']['userid'];
             $status=1;
             echo $pickup,$drop, $totaldistance, $weight, $fare, $userid;
-       
+                $_SESSION['invoice']=array('pickup' => $pickup,
+                'drop'=>$drop,'distance'=>$totaldistance,'luggage'=>$weight,'fare'=>$fare);
                 $fields = array('pickup', 'droploc', 'total_distance','luggage','total_fare','status','customer_user_id');
                 $data = array($pickup, $drop, $totaldistance, $weight, $fare, $status, $userid);
         

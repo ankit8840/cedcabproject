@@ -6,15 +6,19 @@ $conn1->connect('localhost', 'root', '', 'newtasks');
 $ride=$conn1->select();
 if(isset($_REQUEST['picksort'])){
     $sort=$_REQUEST['picksort'];
+    echo '<script>alert("'.$sort.'")</script>';
     $ride=$conn1->name($sort);
+    header("Refresh:0; url=booking.php");
 }
 if(isset($_REQUEST['datesort'])){
     $sort=$_REQUEST['datesort'];
     $ride=$conn1->dateby($sort);
+    header("Refresh:0; url=booking.php");
 }
 if(isset($_REQUEST['faresort'])){
     $sort=$_REQUEST['faresort'];
     $ride=$conn1->fareby($sort);
+    header("Refresh:0; url=booking.php");
 }
 ?>
 <?php require 'adminnav.html'?>
